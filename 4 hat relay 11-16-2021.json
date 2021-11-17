@@ -1,0 +1,1059 @@
+[
+    {
+        "id": "3288b627.bcd0fa",
+        "type": "tab",
+        "label": "keyestudio relays",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "354a65df.666e0a",
+        "type": "RelayJ2",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "x": 860,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6df5fa50.545654",
+        "type": "RelayJ3",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "x": 860,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "a15583f4.330ac",
+        "type": "RelayJ4",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "x": 860,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "5a55a4cc.318b3c",
+        "type": "RelayJ5",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "x": 860,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "6a908de0b597f053",
+        "type": "function",
+        "z": "3288b627.bcd0fa",
+        "name": "Payload = False",
+        "func": "msg.payload = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 100,
+        "wires": [
+            [
+                "d658da26e96e3693"
+            ]
+        ]
+    },
+    {
+        "id": "656ece7a9e23a9d7",
+        "type": "ui_button",
+        "z": "3288b627.bcd0fa",
+        "name": "Antenna 1 on",
+        "group": "2497defced9edc69",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Connect",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "93c9d61fbd764da0"
+            ]
+        ]
+    },
+    {
+        "id": "2d0ce4e9a33744f0",
+        "type": "ui_button",
+        "z": "3288b627.bcd0fa",
+        "name": "Antenna 1 off",
+        "group": "2497defced9edc69",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Disconnect",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "26ac316e2fcfbc1a"
+            ]
+        ]
+    },
+    {
+        "id": "4b6bd7cce9865eb9",
+        "type": "ui_button",
+        "z": "3288b627.bcd0fa",
+        "name": "Antenna 2 On",
+        "group": "12c64b001b161a3d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Connect",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "bedd03cca020a97a",
+                "63af659bbed0b66f"
+            ]
+        ]
+    },
+    {
+        "id": "63af659bbed0b66f",
+        "type": "function",
+        "z": "3288b627.bcd0fa",
+        "name": "Payload = False",
+        "func": "msg.payload = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 240,
+        "wires": [
+            [
+                "4fa041ee6834097c"
+            ]
+        ]
+    },
+    {
+        "id": "0ee623d95839cf5b",
+        "type": "ui_button",
+        "z": "3288b627.bcd0fa",
+        "name": "Antenna 2 off",
+        "group": "12c64b001b161a3d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Disconect",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 280,
+        "wires": [
+            [
+                "1e73d419be5c71f9"
+            ]
+        ]
+    },
+    {
+        "id": "f5e5855aa043579d",
+        "type": "function",
+        "z": "3288b627.bcd0fa",
+        "name": "Payload = False",
+        "func": "msg.payload = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 400,
+        "wires": [
+            [
+                "9d5c65796d84b69c"
+            ]
+        ]
+    },
+    {
+        "id": "6289e57a4a643fb7",
+        "type": "function",
+        "z": "3288b627.bcd0fa",
+        "name": "Payload = False",
+        "func": "msg.payload = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 520,
+        "wires": [
+            [
+                "1f24b885ed84bf4b"
+            ]
+        ]
+    },
+    {
+        "id": "4272c9b26e655cdb",
+        "type": "ui_button",
+        "z": "3288b627.bcd0fa",
+        "name": "Antenna 3 On",
+        "group": "17d734c7c856fc37",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Connect",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 380,
+        "wires": [
+            [
+                "6eee17929d3a5d31",
+                "f5e5855aa043579d"
+            ]
+        ]
+    },
+    {
+        "id": "c4d9ba2858d1b7fe",
+        "type": "ui_button",
+        "z": "3288b627.bcd0fa",
+        "name": "Antenna 3 off",
+        "group": "17d734c7c856fc37",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Disconnect",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 440,
+        "wires": [
+            [
+                "d5abd6fe7b75556c"
+            ]
+        ]
+    },
+    {
+        "id": "25bfc94a8f682823",
+        "type": "ui_button",
+        "z": "3288b627.bcd0fa",
+        "name": "Antenna 4 On",
+        "group": "a833da98962559de",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Conncet",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 520,
+        "wires": [
+            [
+                "fb9317c1da44c074",
+                "6289e57a4a643fb7"
+            ]
+        ]
+    },
+    {
+        "id": "b9ecf5627a736026",
+        "type": "ui_button",
+        "z": "3288b627.bcd0fa",
+        "name": "Antenna 4 off",
+        "group": "a833da98962559de",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Disconnect",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 580,
+        "wires": [
+            [
+                "2fde2b17ddc0ee12"
+            ]
+        ]
+    },
+    {
+        "id": "93c9d61fbd764da0",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "013fb0ff93b884f5",
+            "74dcfdf2e7b0957c"
+        ],
+        "x": 295,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "013fb0ff93b884f5",
+        "type": "link in",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "93c9d61fbd764da0",
+            "26ac316e2fcfbc1a",
+            "4fa041ee6834097c",
+            "9d5c65796d84b69c",
+            "1f24b885ed84bf4b",
+            "8925f740b73e4e4b",
+            "c28212bcf2123986",
+            "6b4731d82d408f61",
+            "f3bbc288a7ce7f64"
+        ],
+        "x": 755,
+        "y": 80,
+        "wires": [
+            [
+                "354a65df.666e0a",
+                "ce4e8253838f2f0e"
+            ]
+        ]
+    },
+    {
+        "id": "26ac316e2fcfbc1a",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "013fb0ff93b884f5"
+        ],
+        "x": 315,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "d658da26e96e3693",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "74fe1b315881a73f",
+            "0e41778f54b4b15a",
+            "395746860ff50758"
+        ],
+        "x": 595,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "bedd03cca020a97a",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "74fe1b315881a73f"
+        ],
+        "x": 315,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1e73d419be5c71f9",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "74fe1b315881a73f"
+        ],
+        "x": 295,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "6eee17929d3a5d31",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "0e41778f54b4b15a"
+        ],
+        "x": 295,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "d5abd6fe7b75556c",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "0e41778f54b4b15a"
+        ],
+        "x": 295,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "fb9317c1da44c074",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "395746860ff50758"
+        ],
+        "x": 295,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "2fde2b17ddc0ee12",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "395746860ff50758"
+        ],
+        "x": 295,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "4fa041ee6834097c",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "013fb0ff93b884f5",
+            "0e41778f54b4b15a",
+            "395746860ff50758"
+        ],
+        "x": 595,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "9d5c65796d84b69c",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "013fb0ff93b884f5",
+            "74fe1b315881a73f",
+            "395746860ff50758"
+        ],
+        "x": 595,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1f24b885ed84bf4b",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "013fb0ff93b884f5",
+            "0e41778f54b4b15a",
+            "74fe1b315881a73f"
+        ],
+        "x": 595,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "74fe1b315881a73f",
+        "type": "link in",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "d658da26e96e3693",
+            "9d5c65796d84b69c",
+            "1e73d419be5c71f9",
+            "bedd03cca020a97a",
+            "1f24b885ed84bf4b",
+            "8925f740b73e4e4b",
+            "6b4731d82d408f61"
+        ],
+        "x": 755,
+        "y": 220,
+        "wires": [
+            [
+                "6df5fa50.545654",
+                "ecb6cac6f7880f7e"
+            ]
+        ]
+    },
+    {
+        "id": "0e41778f54b4b15a",
+        "type": "link in",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "d658da26e96e3693",
+            "4fa041ee6834097c",
+            "1f24b885ed84bf4b",
+            "d5abd6fe7b75556c",
+            "6eee17929d3a5d31",
+            "8925f740b73e4e4b",
+            "6b4731d82d408f61"
+        ],
+        "x": 755,
+        "y": 380,
+        "wires": [
+            [
+                "a15583f4.330ac",
+                "3df35289a1257d9c"
+            ]
+        ]
+    },
+    {
+        "id": "395746860ff50758",
+        "type": "link in",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "d658da26e96e3693",
+            "4fa041ee6834097c",
+            "9d5c65796d84b69c",
+            "2fde2b17ddc0ee12",
+            "fb9317c1da44c074",
+            "8925f740b73e4e4b",
+            "6b4731d82d408f61"
+        ],
+        "x": 755,
+        "y": 540,
+        "wires": [
+            [
+                "5a55a4cc.318b3c",
+                "d5b8ead143a293cd"
+            ]
+        ]
+    },
+    {
+        "id": "87efe069a5d910db",
+        "type": "ui_button",
+        "z": "3288b627.bcd0fa",
+        "name": "Master off",
+        "group": "986f731e71580386",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Disconnect All",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 660,
+        "wires": [
+            [
+                "8925f740b73e4e4b"
+            ]
+        ]
+    },
+    {
+        "id": "8925f740b73e4e4b",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "395746860ff50758",
+            "0e41778f54b4b15a",
+            "74fe1b315881a73f",
+            "013fb0ff93b884f5"
+        ],
+        "x": 275,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "9293ec53e20e2867",
+        "type": "inject",
+        "z": "3288b627.bcd0fa",
+        "name": "Staartup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 290,
+        "y": 740,
+        "wires": [
+            [
+                "c28212bcf2123986"
+            ]
+        ]
+    },
+    {
+        "id": "c28212bcf2123986",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "74dcfdf2e7b0957c",
+            "013fb0ff93b884f5"
+        ],
+        "x": 415,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "74dcfdf2e7b0957c",
+        "type": "link in",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "93c9d61fbd764da0",
+            "c28212bcf2123986",
+            "5654754e70ed13bc"
+        ],
+        "x": 335,
+        "y": 100,
+        "wires": [
+            [
+                "6a908de0b597f053"
+            ]
+        ]
+    },
+    {
+        "id": "0401e74ca316509d",
+        "type": "mqtt in",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "topic": "lightning/strike",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "7fb458b217891653",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 550,
+        "y": 660,
+        "wires": [
+            [
+                "493c53cf0f271c03"
+            ]
+        ]
+    },
+    {
+        "id": "ad31345b4d81f850",
+        "type": "function",
+        "z": "3288b627.bcd0fa",
+        "name": "Payload = False",
+        "func": "msg.payload = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 720,
+        "wires": [
+            [
+                "6b4731d82d408f61"
+            ]
+        ]
+    },
+    {
+        "id": "493c53cf0f271c03",
+        "type": "switch",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "yes",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "no",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 580,
+        "y": 760,
+        "wires": [
+            [
+                "ad31345b4d81f850"
+            ],
+            [
+                "5654754e70ed13bc",
+                "542d0a1c65e00e08"
+            ]
+        ]
+    },
+    {
+        "id": "6b4731d82d408f61",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "013fb0ff93b884f5",
+            "74fe1b315881a73f",
+            "0e41778f54b4b15a",
+            "395746860ff50758"
+        ],
+        "x": 905,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "5654754e70ed13bc",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "links": [
+            "f1065e46a933fa7a",
+            "74dcfdf2e7b0957c"
+        ],
+        "x": 715,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "542d0a1c65e00e08",
+        "type": "function",
+        "z": "3288b627.bcd0fa",
+        "name": "Payload = True",
+        "func": "msg.payload = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 725,
+        "y": 815,
+        "wires": [
+            [
+                "f3bbc288a7ce7f64"
+            ]
+        ]
+    },
+    {
+        "id": "f3bbc288a7ce7f64",
+        "type": "link out",
+        "z": "3288b627.bcd0fa",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "013fb0ff93b884f5"
+        ],
+        "x": 855,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "ce4e8253838f2f0e",
+        "type": "ui_led",
+        "z": "3288b627.bcd0fa",
+        "order": 3,
+        "group": "2497defced9edc69",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Antenna 1",
+        "x": 870,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ecb6cac6f7880f7e",
+        "type": "ui_led",
+        "z": "3288b627.bcd0fa",
+        "order": 3,
+        "group": "12c64b001b161a3d",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Antenna 2",
+        "x": 850,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "3df35289a1257d9c",
+        "type": "ui_led",
+        "z": "3288b627.bcd0fa",
+        "order": 3,
+        "group": "17d734c7c856fc37",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Antenna 3",
+        "x": 850,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d5b8ead143a293cd",
+        "type": "ui_led",
+        "z": "3288b627.bcd0fa",
+        "order": 3,
+        "group": "a833da98962559de",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Antenna 4",
+        "x": 850,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "a4778214115d4778",
+        "type": "ui_spacer",
+        "z": "3288b627.bcd0fa",
+        "name": "spacer",
+        "group": "44f5794c50fe2208",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2497defced9edc69",
+        "type": "ui_group",
+        "name": "Antenna 1",
+        "tab": "d54d2b5ba78c652f",
+        "order": 2,
+        "disp": true,
+        "width": "2",
+        "collapse": false,
+        "className": "buttons"
+    },
+    {
+        "id": "12c64b001b161a3d",
+        "type": "ui_group",
+        "name": "Antenna 2",
+        "tab": "d54d2b5ba78c652f",
+        "order": 3,
+        "disp": true,
+        "width": "2",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "17d734c7c856fc37",
+        "type": "ui_group",
+        "name": "Antenna 3",
+        "tab": "d54d2b5ba78c652f",
+        "order": 4,
+        "disp": true,
+        "width": "2",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a833da98962559de",
+        "type": "ui_group",
+        "name": "Antenna 4",
+        "tab": "d54d2b5ba78c652f",
+        "order": 5,
+        "disp": true,
+        "width": "2",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "986f731e71580386",
+        "type": "ui_group",
+        "name": "Master",
+        "tab": "d54d2b5ba78c652f",
+        "order": 1,
+        "disp": true,
+        "width": "3",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7fb458b217891653",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d54d2b5ba78c652f",
+        "type": "ui_tab",
+        "name": "Antenna Selection",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
